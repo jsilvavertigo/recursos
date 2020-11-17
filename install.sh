@@ -1,7 +1,7 @@
 #!/bin/bash
 @@  Docker @@
-sudo yum check-update
 curl -fsSL https://get.docker.com/ | sh
+sudo yum update -y
 sudo systemctl start docker && sudo systemctl enable docker
 @@ Nomad @@
 sudo yum install -y yum-utils
